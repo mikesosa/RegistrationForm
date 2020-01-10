@@ -1,16 +1,96 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto') */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
 
+#divForm {
+    background-color: #ffff;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#form {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 2px 23px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 23px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 23px -6px rgba(0,0,0,0.75);
+}
+
+.btn-form {
+    color: #FF4B2B;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #FF4B2B;
+
+    margin-right: 6px;
+    padding-left: 2rem;
+    max-height: 39px;
+    padding-right: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.btn-form:hover {
+    background: #FF4B2B;
+    border: 1px solid #cac8c8;
+    color: #ffffff;
+}
+
+.control-me::after {
+    content: "❓";
+    font-size: 25px;
+}
+#agree:checked ~ .control-me::after {
+    content: "✔";
+}
+
+#agree-label {
+    color: #9E9E9E;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #cac8c8;
+    margin-right: 6px;
+    padding-left: 2rem;
+    max-height: 39px;
+    padding-right: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+#agree-label:hover {
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    font-weight: 600;
+}
+
+.label-checked {
+    background-color: #4caf50;
+    color: #ffffff !important;
+    font-weight: 600;
+    border: 1px solid #ffffff00 !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.form-check {
+    display: flex !important;
+}
 
 
 .check {
     visibility: hidden;
     position: absolute;
-    right: -22px;
-    top: 40px;
+    right: 17px;
+    top: 15px;
     color: #BEEE62;
-    /* right: -19rem;
-    top: -2rem;
-    position: relative; */
 }
 
 .check.active{
@@ -21,63 +101,61 @@ small {
     color: red;
 }
 
-form {
-    border: 1px solid cadetblue;
-    background-color: cadetblue;
-    border-radius: 15px;
+.form-control {
+    background-color: #f3f3f3fa !important;
+    border: none !important;
+    height: calc(1.5em + .75rem + 7px) !important;
 }
 
-
-/* }
-
-html {
-    font-family: "Roboto";
-    background: #4FC3F7;
+.input-checked {
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(21,128,0,1) !important;
+    -moz-box-shadow: 0px 0px 3px 1px rgba(21,128,0,1) !important;
+    box-shadow: 0px 0px 3px 1px rgba(21,128,0,1) !important;
+    background-color: #f7fdf1 !important;
 }
-#container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+ul.social-buttons {
+  margin-bottom: 0;
 }
 
-
-
-.input-row {
-  position: relative;
-  min-width: 230px;
-  max-width: 330px;
-  margin: 20px 0;
-}
-
-input {
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
   display: block;
-  border: none;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
   outline: none;
-  margin: 0 auto;
-  padding: 0;
-  height: 25px;
+  background-color: #212529;
 }
 
-label{
-  color: #fff;
-}
-
-#submit{
-  background: #fff;
-  color: $blue;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  padding: 10px 25px;
-}
-
-small{
-  color: red;
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #ffffff;
+  color: #212529;
 }
 
 
+#divInfo {
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0px 20px 20px 0px;
 
-#submit:disabled {
-  background: #BCBDC0
-  color: #fff
+}
+#divInfo p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+}
+.subtitle {
+    max-height: 39px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
