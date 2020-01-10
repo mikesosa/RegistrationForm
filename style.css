@@ -141,7 +141,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0px 20px 20px 0px;
-
 }
 #divInfo p {
     font-family: 'Montserrat', sans-serif;
