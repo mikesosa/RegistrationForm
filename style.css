@@ -83,7 +83,6 @@ body {
 .form-check {
     display: flex !important;
 }
-
 .check {
     visibility: hidden;
     position: absolute;
